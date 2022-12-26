@@ -1,27 +1,32 @@
 {
-    "users": [
-        {
-            "email": "demo@gmail.com",
-            "firstName": "Demo",
-            "lastName": "User",
-            "password": "1234",
-            "orders": [
-                
-            ]
-        }
-    ],
-    "books": [
-        {
-            "id": 1,
-            "name": "Book 1"
-        },
-        {
-            "id": 2,
-            "name": "Book 2"
-        },
-        {
-            "id": 3,
-            "name": "Book 3"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "email": "demo@gmail.com",
+      "firstName": "Demo",
+      "lastName": "User",
+      "password": "1234"
+    },
+    {
+      "firstName": "Hello",
+      "lastName": "World",
+      "email": "helloworld@gmail.com",
+      "password": "1234",
+      "id": 2
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "Book 1"
+    },
+    {
+      "id": 2,
+      "name": "Book 2"
+    },
+    {
+      "id": 3,
+      "name": "Book 3"
+    }
+  ]
 }

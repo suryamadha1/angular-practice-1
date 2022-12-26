@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { FormBuilder } from "@angular/forms";
+import { FormBuilder, FormControl } from "@angular/forms";
+import { UserService } from "../services/user.services";
 
 
 @Component({
@@ -9,14 +10,16 @@ import { FormBuilder } from "@angular/forms";
 
 export class RegisterComponent {
     registerForm = this.formBuilder.group({
-        name: '',
-        password: '',
-        email: ''
+        firstName: new FormControl(''),
+        lastName: new FormControl(''),
+        password: new FormControl(''),
+        email: new FormControl('')
     }) 
-    constructor(private formBuilder: FormBuilder){
+    constructor(private formBuilder: FormBuilder, private userService: UserService){
         
     }
     onSubmit(){
-        
+        this.userService.register(this.registerForm.value)
+        this.registerForm.reset()
     }
 }

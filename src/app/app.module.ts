@@ -10,9 +10,10 @@ import { HomeRouteActivator } from './home/activator/home-route-activator.servic
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserService } from './services/user.services';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, LoginComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, LoginComponent, RegisterComponent],
   imports: [
     BrowserModule,
     FormsModule,
