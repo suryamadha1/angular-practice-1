@@ -1,0 +1,27 @@
+{
+    "users": [
+        {
+            "email": "demo@gmail.com",
+            "firstName": "Demo",
+            "lastName": "User",
+            "password": "1234",
+            "orders": [
+                
+            ]
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "name": "Book 1"
+        },
+        {
+            "id": 2,
+            "name": "Book 2"
+        },
+        {
+            "id": 3,
+            "name": "Book 3"
+        }
+    ]
+}
