@@ -1,2 +1,8 @@
 <p>parent works!</p>
-<app-child></app-child>
+<button (click)="toggleChild()">Toggle Child</button>
+
+<input type="text" [(ngModel)]="channelName">
+<app-child *ngIf="isChild" [channelName]="channelName">
+
+    <h1 #projected>Extra Content</h1>
+</app-child>
