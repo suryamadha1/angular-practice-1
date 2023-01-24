@@ -3,6 +3,7 @@ import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
 import { Observable } from "rxjs";
 import { IUser } from "../model/user.model";
+import { Todo } from "../models/todo.model";
 
 @Injectable()
 export class UserService {
@@ -12,6 +13,13 @@ export class UserService {
     constructor(private http: HttpClient, private router: Router){
 
     }
+
+    // PRACTICE PURPOSES
+    getTodos(){
+        return this.http.get<Todo[]>(`${this.baseUrl}/todos`);
+    }
+
+
     register(formValues){
         const {firstName, lastName, email, password } = formValues;
         const userObject : IUser = {

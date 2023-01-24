@@ -1,6 +1,6 @@
 <div>
     <h1>Home</h1>
-    <ul>
+    <!-- <ul>
         <li>
             <a routerLink="../login">
                 login
@@ -9,6 +9,12 @@
         <li>
             <a routerLink="child">child</a>
         </li>
-    </ul>
+    </ul> -->
+    <!-- <div>
+        <div *ngFor="let todo of todos$ | async">
+            <app-todo-item [todo]="todo"></app-todo-item>
+        </div>
+    </div> -->
+    <app-parent></app-parent>
 </div>
 <router-outlet></router-outlet>

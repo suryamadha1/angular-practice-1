@@ -28,5 +28,34 @@
       "id": 3,
       "name": "Book 3"
     }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "description": "First Todo",
+      "completed": false,
+      "owner": {
+        "firstName": "Demo",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": 2,
+      "description": "Second Todo",
+      "completed": false,
+      "owner": {
+        "firstName": "User 2",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": 1,
+      "description": "Third Todo",
+      "completed": false,
+      "owner": {
+        "firstName": "Third",
+        "lastName": "User"
+      }
+    }
   ]
 }

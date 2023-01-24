@@ -11,9 +11,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserService } from './services/user.services';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, LoginComponent, RegisterComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, LoginComponent, RegisterComponent, TodoItemComponent, ParentComponent, ChildComponent],
   imports: [
     BrowserModule,
     FormsModule,
